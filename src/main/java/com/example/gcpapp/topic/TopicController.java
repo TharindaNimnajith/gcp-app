@@ -1,6 +1,7 @@
 package com.example.gcpapp.topic;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,12 +13,18 @@ public class TopicController {
 
     private final TopicService topicService;
 
-    @PostMapping("/topics")
+    @PostMapping(
+        value = "/topics",
+        consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
+    )
     public void addTopic(@RequestBody Topic topic) {
         topicService.saveTopic(topic);
     }
 
-    @PutMapping("/topics")
+    @PutMapping(
+        value = "/topics",
+        consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
+    )
     public void updateTopic(@RequestBody Topic topic) {
         topicService.saveTopic(topic);
     }
@@ -27,12 +34,18 @@ public class TopicController {
         topicService.deleteTopic(id);
     }
 
-    @GetMapping("/topics/{id}")
+    @GetMapping(
+        value = "/topics/{id}",
+        produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
+    )
     public Topic getTopic(@PathVariable String id) {
         return topicService.getTopic(id);
     }
 
-    @GetMapping("/topics")
+    @GetMapping(
+        value = "/topics",
+        produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
+    )
     public List<Topic> getTopics() {
         return topicService.getTopics();
     }
