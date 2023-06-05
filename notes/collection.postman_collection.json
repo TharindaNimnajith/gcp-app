@@ -1,7 +1,7 @@
 {
   "info": {
     "_postman_id": "57e5085a-f0d8-435f-ad99-f1d883f5853e",
-    "name": "New Collection",
+    "name": "SpringBootProjectAPI",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "9652708"
   },
@@ -294,26 +294,6 @@
             "v1",
             "topics",
             "400"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "TEST",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "https://api.publicapis.org/entries",
-          "protocol": "https",
-          "host": [
-            "api",
-            "publicapis",
-            "org"
-          ],
-          "path": [
-            "entries"
           ]
         }
       },

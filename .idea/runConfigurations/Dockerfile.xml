@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+    <deployment type="dockerfile">
+      <settings>
+        <option name="buildArgs">
+          <list>
+            <DockerEnvVarImpl>
+              <option name="name" value="JAR_FILE" />
+              <option name="value" value="$env:build/libs/*.jar" />
+            </DockerEnvVarImpl>
+          </list>
+        </option>
+        <option name="containerName" value="spring-boot-app" />
+        <option name="sourceFilePath" value="Dockerfile" />
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>
