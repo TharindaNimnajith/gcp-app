@@ -1,0 +1,23 @@
+type Course {
+    id: String!
+    name: String
+    description: String
+    topic: Topic!
+}
+
+type Topic {
+    id: String!
+    name: String
+    description: String
+    courses: [Course]
+}
+
+# The Root Query for the application
+type Query {
+    recentCourses(count: Int, offset: Int): [Course]!
+}
+
+# The Root Mutation for the application
+type Mutation {
+    createCourse(id: String!, name: String, description: String, topicId: String!) : Course!
+}
