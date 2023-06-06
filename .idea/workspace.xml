@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="550d65c5-3d2a-4696-89ef-568a2a2ee2e9" name="Changes" comment="add docker">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2b2ac48f-492b-4a35-bc1e-bad8d93b5b75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2b2ac48f-492b-4a35-bc1e-bad8d93b5b75.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gcpapp/topic/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gcpapp/topic/Topic.java" afterDir="false" />
+    <list default="true" id="550d65c5-3d2a-4696-89ef-568a2a2ee2e9" name="Changes" comment="add course apis">
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +141,7 @@
       <workItem from="1685976219366" duration="43000" />
       <workItem from="1685976275985" duration="12420000" />
       <workItem from="1685995694703" duration="622000" />
-      <workItem from="1686043616649" duration="3266000" />
+      <workItem from="1686043616649" duration="3796000" />
     </task>
     <task id="LOCAL-00001" summary="add xml support">
       <created>1685984581497</created>
@@ -174,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685996082914</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add course apis">
+      <created>1686047105114</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686047105114</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +188,7 @@
     <MESSAGE value="add xml support" />
     <MESSAGE value="modify gitignore" />
     <MESSAGE value="add docker" />
-    <option name="LAST_COMMIT_MESSAGE" value="add docker" />
+    <MESSAGE value="add course apis" />
+    <option name="LAST_COMMIT_MESSAGE" value="add course apis" />
   </component>
 </project>
