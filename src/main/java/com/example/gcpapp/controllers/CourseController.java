@@ -1,6 +1,10 @@
-package com.example.gcpapp.course;
+package com.example.gcpapp.controllers;
 
+import com.example.gcpapp.models.Course;
+import com.example.gcpapp.services.CourseService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.graphql.data.method.annotation.Argument;
+import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -35,5 +39,10 @@ public class CourseController {
     @GetMapping("/courses")
     public List<Course> getCourses() {
         return courseService.getCourses();
+    }
+
+    @QueryMapping
+    public List<Course> recentCourses(@Argument int page, @Argument int size) {
+        return courseService.getRecentCourses(page, size);
     }
 }

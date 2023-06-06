@@ -1,4 +1,4 @@
-package com.example.gcpapp.topic;
+package com.example.gcpapp.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

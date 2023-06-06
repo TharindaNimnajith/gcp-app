@@ -1,5 +1,7 @@
-package com.example.gcpapp.topic;
+package com.example.gcpapp.controllers;
 
+import com.example.gcpapp.models.Topic;
+import com.example.gcpapp.services.TopicService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;

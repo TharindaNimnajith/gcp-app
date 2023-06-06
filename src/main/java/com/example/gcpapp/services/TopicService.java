@@ -1,5 +1,7 @@
-package com.example.gcpapp.topic;
+package com.example.gcpapp.services;
 
+import com.example.gcpapp.models.Topic;
+import com.example.gcpapp.repositories.TopicRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

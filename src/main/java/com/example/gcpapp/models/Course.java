@@ -1,4 +1,4 @@
-package com.example.gcpapp.course;
+package com.example.gcpapp.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
