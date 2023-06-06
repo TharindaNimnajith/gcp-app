@@ -1,4 +1,4 @@
-package com.example.gcpapp.topic;
+package com.example.gcpapp.course;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -6,7 +6,7 @@ import lombok.Getter;
 
 @Entity
 @Getter
-public class Topic {
+public class Course {
 
     @Id
     private String id;

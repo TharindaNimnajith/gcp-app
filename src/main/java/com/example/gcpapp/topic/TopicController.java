@@ -24,10 +24,7 @@ public class TopicController {
         topicService.saveTopic(topic);
     }
 
-    @PutMapping(
-        value = "/topics",
-        consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
-    )
+    @PutMapping("/topics")
     public void updateTopic(@RequestBody Topic topic) {
         log.info("UPDATE");
         topicService.saveTopic(topic);

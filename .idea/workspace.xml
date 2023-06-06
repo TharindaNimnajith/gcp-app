@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="550d65c5-3d2a-4696-89ef-568a2a2ee2e9" name="Changes" comment="modify gitignore">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Dockerfile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/GcpAppApplication.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="550d65c5-3d2a-4696-89ef-568a2a2ee2e9" name="Changes" comment="add docker">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2b2ac48f-492b-4a35-bc1e-bad8d93b5b75.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2b2ac48f-492b-4a35-bc1e-bad8d93b5b75.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gcpapp/topic/TopicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gcpapp/topic/TopicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gcpapp/topic/Topic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gcpapp/topic/Topic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +29,26 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="gcp-app" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gcp-app" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="gcp-app" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -62,6 +74,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QCTVJ9ClIvdlub93uJ9mj1S35g" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -78,6 +93,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/gcp-app/src/main/java/com/example/gcpapp/course",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,7 +112,13 @@
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gcp-app\src\main\java\com\example\gcpapp\course" />
+      <recent name="D:\gcp-app\src\main\java\com\example\gcpapp" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GcpAppApplication">
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings />
@@ -105,6 +127,7 @@
     </configuration>
     <list>
       <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Gradle.gcp-app [build]" />
       <item itemvalue="Spring Boot.GcpAppApplication" />
     </list>
   </component>
@@ -120,7 +143,8 @@
       <workItem from="1685976150040" duration="53000" />
       <workItem from="1685976219366" duration="43000" />
       <workItem from="1685976275985" duration="12420000" />
-      <workItem from="1685995694703" duration="301000" />
+      <workItem from="1685995694703" duration="622000" />
+      <workItem from="1686043616649" duration="3266000" />
     </task>
     <task id="LOCAL-00001" summary="add xml support">
       <created>1685984581497</created>
@@ -143,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685989221039</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add docker">
+      <created>1685996082914</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685996082914</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +183,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add xml support" />
     <MESSAGE value="modify gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify gitignore" />
+    <MESSAGE value="add docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="add docker" />
   </component>
 </project>
