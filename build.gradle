@@ -1,11 +1,12 @@
 plugins {
     id 'java'
+    id 'maven-publish'
     id 'org.springframework.boot' version '3.1.0'
     id 'io.spring.dependency-management' version '1.1.0'
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.0'
 sourceCompatibility = '17'
 
 repositories {
@@ -23,6 +24,27 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.example'
+            artifactId = 'spring-boot-app'
+            version = '1.0.0'
+
+            from components.java
+
+            repository {
+                // Replace 'OWNER' and 'REPO' with your GitHub username and repository name
+                url "https://maven.pkg.github.com/OWNER/REPO"
+                credentials {
+                    username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                    password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+                }
+            }
+        }
+    }
 }
 
 tasks.named('test') {
