@@ -14,8 +14,8 @@ public class TopicService {
 
     private final TopicRepository topicRepository;
 
-    public void saveTopic(Topic topic) {
-        topicRepository.save(topic);
+    public Topic saveTopic(Topic topic) {
+        return topicRepository.save(topic);
     }
 
     public void deleteTopic(String id) {

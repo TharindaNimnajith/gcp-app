@@ -6,6 +6,8 @@ import com.example.gcpapp.repositories.CourseRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.graphql.data.method.annotation.Argument;
+import org.springframework.graphql.data.method.annotation.MutationMapping;
 import org.springframework.graphql.data.method.annotation.SchemaMapping;
 import org.springframework.stereotype.Service;
 
@@ -19,8 +21,8 @@ public class CourseService {
     private final CourseRepository courseRepository;
     private final TopicService topicService;
 
-    public void saveCourse(Course course) {
-        courseRepository.save(course);
+    public Course saveCourse(Course course) {
+        return courseRepository.save(course);
     }
 
     public void deleteCourse(String id) {
@@ -45,5 +47,15 @@ public class CourseService {
     @SchemaMapping
     public Topic topic(Course course) {
         return topicService.getTopic(course.getTopicId());
+    }
+
+    @MutationMapping
+    public Course createCourse(@Argument String id, @Argument String name, @Argument String description, @Argument String topicId) {
+        return courseRepository.save(Course.builder()
+            .id(id)
+            .name(name)
+            .description(description)
+            .topicId(topicId)
+            .build());
     }
 }

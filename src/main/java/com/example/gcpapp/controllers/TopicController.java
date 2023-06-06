@@ -21,15 +21,15 @@ public class TopicController {
         value = "/topics",
         consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE}
     )
-    public void addTopic(@RequestBody Topic topic) {
+    public Topic addTopic(@RequestBody Topic topic) {
         log.info("CREATE");
-        topicService.saveTopic(topic);
+        return topicService.saveTopic(topic);
     }
 
     @PutMapping("/topics")
-    public void updateTopic(@RequestBody Topic topic) {
+    public Topic updateTopic(@RequestBody Topic topic) {
         log.info("UPDATE");
-        topicService.saveTopic(topic);
+        return topicService.saveTopic(topic);
     }
 
     @DeleteMapping("/topics/{id}")

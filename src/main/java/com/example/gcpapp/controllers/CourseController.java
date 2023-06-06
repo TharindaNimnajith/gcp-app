@@ -17,13 +17,13 @@ public class CourseController {
     private final CourseService courseService;
 
     @PostMapping("/courses")
-    public void addCourse(@RequestBody Course course) {
-        courseService.saveCourse(course);
+    public Course addCourse(@RequestBody Course course) {
+        return courseService.saveCourse(course);
     }
 
     @PutMapping("/courses")
-    public void updateCourse(@RequestBody Course course) {
-        courseService.saveCourse(course);
+    public Course updateCourse(@RequestBody Course course) {
+        return courseService.saveCourse(course);
     }
 
     @DeleteMapping("/courses/{id}")
