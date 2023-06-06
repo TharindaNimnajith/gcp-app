@@ -34,13 +34,15 @@ publishing {
             version = '1.0.0'
 
             from components.java
+        }
+    }
 
-            repository {
-                url 'https://maven.pkg.github.com/TharindaNimnajith/gcp-app'
-                credentials {
-                    username = project.findProperty('gpr.user') ?: System.getenv('USERNAME')
-                    password = project.findProperty('gpr.key') ?: System.getenv('TOKEN')
-                }
+    repositories {
+        maven {
+            url 'https://maven.pkg.github.com/TharindaNimnajith/gcp-app'
+            credentials {
+                username = project.findProperty('gpr.user') ?: System.getenv('USERNAME')
+                password = project.findProperty('gpr.key') ?: System.getenv('TOKEN')
             }
         }
     }
