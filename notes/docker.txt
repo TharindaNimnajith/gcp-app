@@ -1,0 +1,3 @@
+./gradlew build
+docker build --build-arg JAR_FILE=build/libs/*.jar -t tharinda/springbootapp .
+docker run -p 8080:8080 -d tharinda/springbootapp:latest
