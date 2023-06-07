@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'com.example'
-version = '1.0.0'
+version = '2.0.0'
 sourceCompatibility = '17'
 
 repositories {
@@ -31,7 +31,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.example'
             artifactId = 'spring-boot-app'
-            version = '1.0.0'
+            version = '2.0.0'
 
             from components.java
         }
