@@ -2,7 +2,7 @@ type Course {
     id: String!
     name: String
     description: String
-    topic: Topic!
+    topic: Topic
 }
 
 type Topic {
@@ -12,12 +12,12 @@ type Topic {
     courses: [Course]
 }
 
-# The Root Query for the application
+# The root query for the application
 type Query {
-    recentCourses(count: Int, offset: Int): [Course]!
+    recentCourses(page: Int, size: Int): [Course]!
 }
 
-# The Root Mutation for the application
+# The root mutation for the application
 type Mutation {
     createCourse(id: String!, name: String, description: String, topicId: String!) : Course!
 }
